@@ -1,173 +1,244 @@
-<<<<<<< HEAD
-=======
-# geoprocessamento-app
->>>>>>> 26050e8d7dc43deb7459ffbec1f381638cd563b8
-Aplicação de Geoprocessamento Interativo
-Descrição do Projeto
+# Geoprocessamento App
 
-Esta aplicação web foi desenvolvida com o objetivo de permitir a visualização, criação, edição e manipulação de dados geográficos em um mapa interativo.
+## 📌 Descrição do Projeto
 
-O sistema possibilita que o usuário trabalhe diretamente com elementos geoespaciais, utilizando ferramentas de desenho, importação de dados no formato GeoJSON, além da visualização de propriedades e localização de pontos de interesse.
+Esta aplicação web foi desenvolvida como solução para um desafio técnico de **geoprocessamento**, cujo objetivo é permitir a **visualização, criação, edição e remoção de elementos geográficos em um mapa interativo**.
 
-A aplicação foi desenvolvida utilizando React para a interface e Leaflet para a renderização do mapa e manipulação dos elementos geográficos.
+A aplicação utiliza tecnologias modernas do ecossistema JavaScript, como **React**, **Vite** e **Leaflet**, permitindo manipular dados geoespaciais de forma dinâmica diretamente no navegador.
 
-Tecnologias Utilizadas
+Além dos requisitos propostos no desafio, foram implementadas funcionalidades adicionais para melhorar a **usabilidade da interface, organização do código e experiência do usuário**.
 
-React – Biblioteca JavaScript para construção da interface
+---
 
-Vite – Ferramenta de build rápida para aplicações web
+# 🎯 Objetivo do Desafio
 
-Leaflet – Biblioteca open source para mapas interativos
+Desenvolver uma aplicação capaz de:
 
-Leaflet Draw – Plugin para criação e edição de elementos geográficos
+* Importar arquivos **JSON ou GeoJSON**
+* Visualizar elementos geográficos em um mapa
+* Criar novos elementos geográficos
+* Editar elementos existentes
+* Remover elementos do mapa
+* Trabalhar com coordenadas geográficas
+* Fornecer uma interface simples e intuitiva para interação com o mapa
 
-Leaflet Control Geocoder – Plugin para busca de endereços no mapa
+---
 
-GeoJSON – Formato padrão para representação de dados geográficos
+# 🚀 Tecnologias Utilizadas
 
-JavaScript (ES6+)
+As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
-Funcionalidades Implementadas
-Mapa Interativo
+* **React** – biblioteca JavaScript para construção da interface
+* **Vite** – ferramenta de build rápida para aplicações web modernas
+* **Leaflet** – biblioteca para criação de mapas interativos
+* **Leaflet Draw** – plugin para criação e edição de elementos no mapa
+* **JavaScript (ES6+)**
+* **HTML5**
+* **CSS3**
+* **GeoJSON** – formato padrão para representação de dados geográficos
 
-A aplicação apresenta um mapa interativo que permite:
+---
 
-Navegação com zoom e movimentação (pan)
+# 🗺️ Funcionalidades Implementadas
 
-Visualização de camadas geográficas
+## Visualização do Mapa
 
-Interação direta com elementos do mapa
+Ao iniciar a aplicação, um mapa interativo é exibido utilizando a biblioteca **Leaflet**, permitindo navegação e exploração geográfica.
 
-Operações CRUD de Elementos Geográficos
+---
 
-O sistema permite a manipulação completa de dados geoespaciais através das seguintes operações:
+## CRUD de Elementos Geográficos
 
-Criar
+A aplicação permite manipular elementos diretamente no mapa através das seguintes operações:
 
-O usuário pode criar diferentes tipos de elementos diretamente no mapa:
+### Criar
 
-Marcadores (pontos)
+Usuários podem desenhar novos elementos geográficos utilizando as ferramentas de desenho disponíveis.
 
-Linhas (polylines)
+Elementos suportados:
 
-Polígonos
+* Pontos
+* Linhas
+* Polígonos
+* Círculos
 
-Retângulos
+---
 
-Ler
+### Ler (Visualizar)
 
-Todos os elementos criados ou importados podem ser visualizados diretamente no mapa, com suporte à exibição de informações através de popups interativos.
+Todos os elementos adicionados ao mapa podem ser visualizados em tempo real.
 
-Editar
+Também é possível visualizar **pontos previamente carregados**.
 
-Os elementos criados podem ser editados utilizando as ferramentas do Leaflet Draw, permitindo a alteração de geometria e posicionamento.
+---
 
-Excluir
+### Editar
 
-O sistema permite a remoção de elementos individuais ou a limpeza completa dos elementos desenhados no mapa.
+Elementos criados no mapa podem ser modificados utilizando as ferramentas de edição.
 
-Importação de Arquivos GeoJSON
+---
 
-A aplicação permite a importação de arquivos geográficos no formato:
+### Remover
 
-.json
+Elementos podem ser removidos diretamente através da ferramenta de exclusão do mapa.
 
-.geojson
+---
 
-Após a importação, os dados são automaticamente renderizados no mapa e centralizados na área correspondente.
+## Importação de Arquivos GeoJSON
 
-Exportação de Dados GeoJSON
+A aplicação permite importar arquivos no formato:
 
-Os elementos desenhados ou manipulados no mapa podem ser exportados novamente no formato GeoJSON, permitindo reutilização dos dados em outros sistemas ou ferramentas de geoprocessamento.
+* `.json`
+* `.geojson`
 
-Visualização de Coordenadas
+Após selecionar o arquivo, os elementos geográficos são automaticamente exibidos no mapa.
 
-Ao clicar em qualquer ponto do mapa, o sistema exibe automaticamente um popup contendo:
+---
 
-Latitude
+# ⭐ Funcionalidades Extras Implementadas
 
-Longitude
+Além dos requisitos do desafio, foram implementadas melhorias adicionais para tornar o projeto mais completo.
 
-Essa funcionalidade facilita a identificação precisa de coordenadas geográficas.
+---
 
-Busca de Endereços no Mapa
+## 🔍 Barra de Pesquisa de Localização
 
-Foi implementada uma barra de busca de endereços, utilizando o plugin Leaflet Control Geocoder.
+Foi adicionada uma funcionalidade de **busca de locais**, permitindo ao usuário pesquisar endereços ou regiões diretamente no mapa.
 
-Com essa funcionalidade o usuário pode:
+Isso melhora significativamente a **usabilidade e navegação da aplicação**.
 
-Buscar cidades
+---
 
-Buscar ruas ou endereços
+## 📍 Pontos da Sanesul
 
-Navegar rapidamente para locais específicos no mapa
+Ao iniciar a aplicação, o mapa já exibe **pontos de interesse relacionados à Sanesul**, permitindo visualização imediata de locais relevantes.
 
-Essa funcionalidade não era obrigatória no desafio, mas foi adicionada para melhorar a experiência do usuário e demonstrar maior domínio da biblioteca Leaflet.
+Esses pontos são carregados automaticamente no mapa quando a aplicação é iniciada.
 
-Pontos de Interesse da Sanesul
+---
 
-O mapa apresenta marcadores previamente configurados com unidades da Sanesul localizadas em Campo Grande - MS.
+## 📂 Interface Melhorada para Importação de Arquivos
 
-Cada marcador apresenta um popup contendo:
+A interface para importação de arquivos foi aprimorada, transformando o campo padrão de upload em um **botão compacto e integrado ao popup do mapa**, melhorando a experiência visual da aplicação.
 
-Nome da unidade
+---
 
-Cidade
+## 🧩 Organização Modular do Código
 
-Coordenadas geográficas
+O projeto foi estruturado de forma modular, separando responsabilidades em diferentes componentes React.
 
-Essa funcionalidade demonstra a capacidade da aplicação de trabalhar com pontos geográficos reais e informações associadas.
+Isso facilita:
 
-Persistência de Dados
+* manutenção
+* leitura do código
+* escalabilidade do projeto
 
-Os elementos criados no mapa são armazenados automaticamente no LocalStorage do navegador, permitindo que os dados permaneçam disponíveis mesmo após a atualização da página.
+---
 
-Estrutura do Projeto
-src
- ├ components
- │   ├ MapView.jsx
- │   └ FileImporter.jsx
- │
- ├ App.jsx
- └ main.jsx
-Descrição dos Componentes
+# 📁 Estrutura do Projeto
 
-MapView.jsx
-Responsável pela inicialização do mapa, renderização das camadas, ferramentas de desenho e manipulação dos elementos geográficos.
+```
+geoprocessamento-app
+│
+├ src
+│
+│ ├ components
+│ │ ├ FileImporter.jsx
+│ │ ├ MapView.jsx
+│ │ └ SanesulPoints.jsx
+│ │
+│ ├ data
+│ │ └ Example.geojson
+│ │
+│ ├ App.jsx
+│ └ main.jsx
+│
+├ index.html
+├ package.json
+├ vite.config.js
+├ .gitignore
+└ README.md
+```
 
-FileImporter.jsx
-Responsável pelo controle de importação de arquivos GeoJSON e integração com o mapa.
+---
 
-Decisões Técnicas
+# ⚙️ Como Executar o Projeto
 
-A escolha do Leaflet foi feita por ser uma biblioteca amplamente utilizada em aplicações de geoprocessamento web, oferecendo grande flexibilidade para manipulação de dados geográficos.
+## 1️⃣ Clonar o repositório
 
-O formato GeoJSON foi utilizado por ser um padrão amplamente adotado para representação de dados geoespaciais e por possuir excelente integração com bibliotecas de mapas como o Leaflet.
+```
+git clone https://github.com/higuinha123/geoprocessamento-app.git
+```
 
-A aplicação foi estruturada utilizando componentes React, buscando manter uma separação clara de responsabilidades e facilitar a manutenção e escalabilidade do código.
+---
 
-Melhorias Implementadas Além dos Requisitos do Desafio
+## 2️⃣ Acessar a pasta do projeto
 
-Além das funcionalidades solicitadas no desafio técnico, foram adicionadas algumas melhorias para aprimorar a experiência do usuário e demonstrar maior domínio técnico:
+```
+cd geoprocessamento-app
+```
 
-Barra de busca de endereços no mapa
+---
 
-Exibição de coordenadas geográficas ao clicar no mapa
+## 3️⃣ Instalar as dependências
 
-Exportação de dados GeoJSON
+```
+npm install
+```
 
-Persistência automática de elementos no navegador (LocalStorage)
+---
 
-Interface aprimorada com ferramentas organizadas no mapa
+## 4️⃣ Executar o projeto
 
-Pontos de interesse previamente configurados
+```
+npm run dev
+```
 
-Essas melhorias foram implementadas com o objetivo de tornar a aplicação mais próxima de uma ferramenta real de visualização e manipulação de dados geográficos.
+---
 
-Autor
+## 5️⃣ Abrir no navegador
 
-<<<<<<< HEAD
-Desenvolvido por Kauã Higa como parte de um desafio técnico de desenvolvimento de aplicações de geoprocessamento.
-=======
-Desenvolvido por Kauã Higa como parte de um desafio técnico de desenvolvimento de aplicações de geoprocessamento.
->>>>>>> 26050e8d7dc43deb7459ffbec1f381638cd563b8
+```
+http://localhost:5173
+```
+
+---
+
+# 📊 Manipulação de Dados Geoespaciais
+
+O projeto trabalha com dados geográficos utilizando o formato **GeoJSON**, que permite representar:
+
+* Pontos
+* Linhas
+* Polígonos
+* Coleções de elementos geográficos
+
+Esses dados são renderizados diretamente no mapa através da integração entre **React e Leaflet**.
+
+---
+
+# 🧑‍💻 Boas Práticas Utilizadas
+
+Durante o desenvolvimento foram aplicadas boas práticas como:
+
+* Separação de responsabilidades em componentes
+* Código modular e reutilizável
+* Organização clara da estrutura de arquivos
+* Interface simples e intuitiva
+* Uso de bibliotecas adequadas para manipulação geoespacial
+
+---
+
+# 📌 Considerações Finais
+
+Este projeto demonstra a construção de uma aplicação de **geoprocessamento interativa**, capaz de manipular dados geográficos diretamente no navegador.
+
+Além de atender aos requisitos do desafio técnico, foram implementadas melhorias adicionais que tornam a aplicação mais completa e amigável para o usuário.
+
+O projeto também demonstra a utilização de tecnologias modernas do desenvolvimento web e boas práticas de organização de código.
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido por **Kauã Higa Fontoura**
