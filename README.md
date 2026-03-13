@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# geoprocessamento-app
+>>>>>>> 26050e8d7dc43deb7459ffbec1f381638cd563b8
 Aplicação de Geoprocessamento Interativo
 Descrição do Projeto
 
@@ -162,4 +166,8 @@ Essas melhorias foram implementadas com o objetivo de tornar a aplicação mais 
 
 Autor
 
+<<<<<<< HEAD
 Desenvolvido por Kauã Higa como parte de um desafio técnico de desenvolvimento de aplicações de geoprocessamento.
+=======
+Desenvolvido por Kauã Higa como parte de um desafio técnico de desenvolvimento de aplicações de geoprocessamento.
+>>>>>>> 26050e8d7dc43deb7459ffbec1f381638cd563b8
